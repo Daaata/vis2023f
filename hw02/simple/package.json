@@ -1,0 +1,14 @@
+{
+  "name": "961b17e3de13f560",
+  "main": "961b17e3de13f560@22.js",
+  "version": "22.0.0",
+  "homepage": "https://observablehq.com/d/961b17e3de13f560",
+  "author": {
+    "name": "北科大-許哲維's Workspace",
+    "url": "https://observablehq.com/@bei-ke-da-xu-zhe-wei-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
