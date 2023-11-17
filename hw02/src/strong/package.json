@@ -1,0 +1,14 @@
+{
+  "name": "fdf84d341eaedcf2",
+  "main": "fdf84d341eaedcf2@174.js",
+  "version": "174.0.0",
+  "homepage": "https://observablehq.com/d/fdf84d341eaedcf2",
+  "author": {
+    "name": "北科大-許哲維's Workspace",
+    "url": "https://observablehq.com/@bei-ke-da-xu-zhe-wei-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
