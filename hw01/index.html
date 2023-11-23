@@ -382,6 +382,10 @@
       score += parseInt(d3.select('#m3').html());   
     }
 
+    if (d3.select("#myCheckbox4").property("checked")){
+      score += parseInt(d3.select('#m4').html());   
+    }
+
     d3.select("#myTotal").html(score);    
   }
 </script>
