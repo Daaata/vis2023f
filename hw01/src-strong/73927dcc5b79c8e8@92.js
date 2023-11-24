@@ -110,7 +110,7 @@ export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
   const fileAttachments = new Map([
-    ["data.csv", {url: new URL("https://github.com/Daaata/vis2023f/blob/main/hw01/src/data.csv", import.meta.url), mimeType: "text/csv", toString}]
+    ["data.csv", {url: new URL("data.csv", import.meta.url), mimeType: "text/csv", toString}]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], _1);
