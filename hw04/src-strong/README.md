@@ -1,6 +1,6 @@
 # HW4 Strong basline
 
-https://observablehq.com/d/6f64afa0b1cdf4c3@78
+https://observablehq.com/d/6f64afa0b1cdf4c3@145
 
 View this notebook in your browser by running a web server in this folder. For
 example:
@@ -14,7 +14,7 @@ import this module directly into your application. To npm install:
 
 ~~~sh
 npm install @observablehq/runtime@5
-npm install https://api.observablehq.com/d/6f64afa0b1cdf4c3@78.tgz?v=3
+npm install https://api.observablehq.com/d/6f64afa0b1cdf4c3@145.tgz?v=3
 ~~~
 
 Then, import your notebook and the runtime as:
