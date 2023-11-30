@@ -15,6 +15,7 @@
 
 <title>作品集 Portfolio</title>
 <!-- https://alexlenail.me/NN-SVG/about.html -->
+<!-- 程式碼參考老師與助教之內容 -->
 <link rel="icon" href="../hw00/favicon.svg"/>
 <style type="text/css">
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
@@ -182,6 +183,16 @@
     </div>
   </div>
 
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <a href="https://Daaata.github.io/vis2023f/hw05/src/simple/">https://Daaata.github.io/vis2023f/hw05/src/simple/</a>
+      <hr>
+      <a href="https://Daaata.github.io/vis2023f/hw05/src/medium/">https://Daaata.github.io/vis2023f/hw05/src/medium/</a>
+      <hr>
+      <a href="https://Daaata.github.io/vis2023f/hw05/src/strong/">https://Daaata.github.io/vis2023f/hw05/src/strong/</a>
+    </div>
+  </div>
+
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
@@ -201,19 +212,39 @@
         </tr>
         <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>2</td>
-          <td>Simple baseline - 描述、描述、描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
+          <td id='m1'>1</td>
+          <td>Simple baseline - 實作Force-directed tree呈現小組情況</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>6</td>
-          <td>Medium baseline - 描述、描述、描述 </td>
+          <td id='m2'>1</td>
+          <td>Simple baseline - 使節點可以被拖拉移動</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>2</td>
-          <td>Strong baseline - 描述、描述、描述 </td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+          <td id='m3'>1</td>
+          <td>Simple baseline - 將個人圖片放入節點圓圈</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td id='m4'>1</td>
+          <td>Medium baseline - 滑鼠移動過去顯示該成員相關資訊 </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked></td>
+          <td id='m5'>2</td>
+          <td>Medium baseline - 滑鼠移動過去放大節點與圖片 </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox6" checked></td>
+          <td id='m6'>2</td>
+          <td>Medium baseline - 點擊節點可以展開或縮放 </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox7" checked></td>
+          <td id='m7'>2</td>
+          <td>Strong baseline - 利用蘋果成績圖環繞個人照片(小組) </td>
         </tr>
       </table>
     </div>
@@ -222,15 +253,26 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF"
+      src="https://observablehq.com/embed/28a4a6ded026745b@69?cell=*"></iframe>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF"
+      src="https://observablehq.com/embed/6c58c807e294add0@39?cell=*"></iframe>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <iframe width="100%" height="500" frameborder="0" style="background-color: #FFFFFF"
+      src="https://observablehq.com/embed/a38aeaa67c1a820e@28?cell=*"></iframe>
+    </div>
+  </div>
 
 
 <script>
@@ -265,6 +307,22 @@
 
     if (d3.select("#myCheckbox3").property("checked")){
       score += parseInt(d3.select('#m3').html());   
+    }
+
+    if (d3.select("#myCheckbox4").property("checked")){
+      score += parseInt(d3.select('#m4').html());   
+    }
+
+    if (d3.select("#myCheckbox5").property("checked")){
+      score += parseInt(d3.select('#m5').html());   
+    }
+
+    if (d3.select("#myCheckbox6").property("checked")){
+      score += parseInt(d3.select('#m6').html());   
+    }
+
+    if (d3.select("#myCheckbox7").property("checked")){
+      score += parseInt(d3.select('#m7').html());   
     }
 
     d3.select("#myTotal").html(score);    
